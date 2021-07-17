@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital@1&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+}
+#view1{
+    display: flex;
+    flex-direction: row;
+}
+.half_width{
+    min-width: 50%;
+    height: 100vh;
+}
+.division_1{
+    background-image: url("india-map.jpg"); /* The image used */
+    width: 45vw;
+    height: auto; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: contain; /* Resize the background image to cover the entire container */
+}
+.division_2{
+    background-color: snow;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.center_txt{
+    margin-top: 40vh;
+}
+#content{
+    display: flex;
+    flex-direction: column;
+}
+#content_1,#content_2,#content_3,#content_4,#content_5,#content_6,#content_7,#content_8,#content_9,#content_10,#content_11,#content_12,#content_13,#content_14,#content_15,#content_16,#content_17,#content_18,#content_19,#content_20,#content_21,#content_22,#content_23,#content_24,#content_25,#content_26,#content_27,#content_28{
+    display: none;
+}
+.general_info,.state_info{
+    width: auto;
+    height: 50vh;
+}
+.info_content1,.info_content2{
+    padding-top: 7%;
+    padding-left: 8%;
+    padding-right: 3%;
+    font-family: 'Bebas Neue', cursive;
+}
+.info_content2{
+    padding-top: 1%;
+}
+.info_content1 p,.info{
+    font-family: 'Alegreya Sans', sans-serif;
+}
+.col_height{
+    padding: 1% 0;
+}
+.info,.info1,.info2{
+    padding-left: 5px;
+}
+.col_height{
+    height: 5vh ;
+}
+.container .col:hover{
+    border: 2px solid #d4d3d3;
+}
+.info1{
+    padding-top: 3%;
+}
+@media screen and (min-width: 1050px) {
+    #view1{
+        display: flex;
+    }
+    #view2{
+        display: none;
+    }
+  }
+@media screen and (max-width: 1050px) {
+    #view1{
+        display: none;
+    }
+    #view2{
+        display:inline;
+    }
+  }
